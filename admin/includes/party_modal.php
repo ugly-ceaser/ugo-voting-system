@@ -5,22 +5,30 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b>Add New Position</b></h4>
+              <h4 class="modal-title"><b>Add New Party</b></h4>
             </div>
             <div class="modal-body">
-              <form class="form-horizontal" method="POST" action="positions_add.php">
+              <form class="form-horizontal" method="POST" action="party_add.php">
                 <div class="form-group">
-                    <label for="description" class="col-sm-3 control-label">Party Name</label>
+                    <label for="party_name" class="col-sm-3 control-label">Party Name</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="description" name="party_name" required>
+                      <input type="text" class="form-control" id="party_name" name="party_name" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="max_vote" class="col-sm-3 control-label">Party Sec</label>
+                    <label for="party_sec" class="col-sm-3 control-label">Party Sec</label>
 
                     <div class="col-sm-9">
-                      <input type="number" class="form-control" id="max_vote" name="party_sec" required>
+                      <input type="text" class="form-control" id="party_sec" name="party_sec" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="yaer" class="col-sm-3 control-label">Year</label>
+
+                    <div class="col-sm-9">
+                      <input type="date" class="form-control" id="yaer" name="yaer" required>
                     </div>
                 </div>
 
@@ -28,7 +36,7 @@
                     <label for="max_vote" class="col-sm-3 control-label">Party Contact</label>
 
                     <div class="col-sm-9">
-                      <input type="number" class="form-control" id="max_vote" name="party_contact" required>
+                      <input type="tel" class="form-control" id="party_contact" name="party_contact" required>
                     </div>
                 </div>
             </div>
@@ -48,23 +56,31 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b>Edit Position</b></h4>
+              <h4 class="modal-title"><b>Edit Party</b></h4>
             </div>
             <div class="modal-body">
-              <form class="form-horizontal" method="POST" action="positions_edit.php">
+              <form class="form-horizontal" method="POST" action="party_edit.php">
                 <input type="hidden" class="id" name="id">
                 <div class="form-group">
-                    <label for="description" class="col-sm-3 control-label">Party Name</label>
+                    <label for="party_name" class="col-sm-3 control-label">Party Name</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="description" name="party_name" required>
+                      <input type="text" class="form-control" id="party_name" name="party_name" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="max_vote" class="col-sm-3 control-label">Party Sec</label>
+                    <label for="party_sec" class="col-sm-3 control-label">Party Sec</label>
 
                     <div class="col-sm-9">
-                      <input type="number" class="form-control" id="max_vote" name="party_sec" required>
+                      <input type="text" class="form-control" id="party_sec" name="party_sec" required>
+                    </div>
+                </div>
+
+                  <div class="form-group">
+                    <label for="yaer" class="col-sm-3 control-label">Year</label>
+
+                    <div class="col-sm-9">
+                      <input type="date" class="form-control" id="yaer" name="yaer" required>
                     </div>
                 </div>
 
@@ -72,7 +88,7 @@
                     <label for="max_vote" class="col-sm-3 control-label">Party Contact</label>
 
                     <div class="col-sm-9">
-                      <input type="number" class="form-control" id="max_vote" name="party_contact" required>
+                      <input type="tel" class="form-control" id="max_vote" name="party_contact" required>
                     </div>
                 </div>
             </div>
@@ -95,7 +111,7 @@
               <h4 class="modal-title"><b>Deleting...</b></h4>
             </div>
             <div class="modal-body">
-              <form class="form-horizontal" method="POST" action="positions_delete.php">
+              <form class="form-horizontal" method="POST" action="party_delete.php">
                 <input type="hidden" class="id" name="id">
                 <div class="text-center">
                     <p>DELETE PARTY</p>

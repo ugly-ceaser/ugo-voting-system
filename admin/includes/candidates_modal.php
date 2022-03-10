@@ -69,8 +69,8 @@
 
                     <div class="col-sm-9">
                           <select class="form-control" id="state_origin" name="state_origin" required>
-                            <option value="Abia<">Abia</option>
-                            <option value="Adamawa<">Adamawa</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
                             <option value="Akwa Ibom">Akwa Ibom</option>
                             <option value="Anambra">Anambra</option>
                             <option value="Bauchi">Bauchi</option>
