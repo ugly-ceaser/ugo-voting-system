@@ -149,10 +149,21 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="platform" class="col-sm-3 control-label">Platform</label>
+                    <label for="party" class="col-sm-3 control-label">Political Party</label>
 
                     <div class="col-sm-9">
-                      <textarea class="form-control" id="platform" name="platform" rows="7"></textarea>
+                      <select class="form-control" id="party" name="party_name" required>
+                        <option value="" selected>- Select -</option>
+                        <?php
+                          $sql = "SELECT * FROM party";
+                          $query = $conn->query($sql);
+                          while($row = $query->fetch_assoc()){
+                            echo "
+                              <option value='".$row['id']."'>".$row['party_name']."</option>
+                            ";
+                          }
+                        ?>
+                      </select>
                     </div>
                 </div>
             </div>
@@ -210,10 +221,21 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="edit_platform" class="col-sm-3 control-label">Platform</label>
+                    <label for="party" class="col-sm-3 control-label">Political Party</label>
 
                     <div class="col-sm-9">
-                      <textarea class="form-control" id="edit_platform" name="platform" rows="7"></textarea>
+                      <select class="form-control" id="party" name="party_name" required>
+                        <option value="" selected>- Select -</option>
+                        <?php
+                          $sql = "SELECT * FROM party";
+                          $query = $conn->query($sql);
+                          while($row = $query->fetch_assoc()){
+                            echo "
+                              <option value='".$row['id']."'>".$row['party_name']."</option>
+                            ";
+                          }
+                        ?>
+                      </select>
                     </div>
                 </div>
             </div>

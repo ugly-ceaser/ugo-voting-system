@@ -27,6 +27,6 @@
 		$_SESSION['error'] = 'Input voter credentials first';
 	}
 
-	header('location: user.php');
+	header('location: index.php');
 
 ?>

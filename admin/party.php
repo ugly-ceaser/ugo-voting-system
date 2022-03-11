@@ -60,7 +60,7 @@
                 </thead>
                 <tbody>
                   <?php
-                    $sql = "SELECT * FROM party ORDER BY priority ASC";
+                    $sql = "SELECT * FROM party ORDER BY party_name ASC";
                     $query = $conn->query($sql);
                     while($row = $query->fetch_assoc()){
                       echo "
@@ -88,7 +88,6 @@
   </div>
     
   <?php include 'includes/footer.php'; ?>
-  
   <?php include 'includes/party_modal.php'; ?>
 </div>
 <?php include 'includes/scripts.php'; ?>
