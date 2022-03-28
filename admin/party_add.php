@@ -7,13 +7,13 @@
 		$yaer = $_POST['yaer'];
         $party_contact = $_POST['party_contact'];
 
-		$sql = "SELECT * FROM political_party ORDER BY priority DESC LIMIT 1";
-		$query = $conn->query($sql);
-		$row = $query->fetch_assoc();
+		// $sql = "SELECT * FROM party ORDER BY priority DESC LIMIT 1";
+		// $query = $conn->query($sql);
+		// $row = $query->fetch_assoc();
 
-		$priority = $row['priority'] + 1;
+		// $priority = $row['priority'] + 1;
 		
-		$sql = "INSERT INTO party (party_name, party_sec,yaer,party_contact, priority) VALUES ('$party_name', '$party_sec','$yaer','$party_contact', '$priority')";
+		$sql = "INSERT INTO party (party_name, party_sec,yaer,party_contact) VALUES ('$party_name', '$party_sec','$yaer','$party_contact')";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Party added successfully';
 		}
@@ -26,5 +26,5 @@
 		$_SESSION['error'] = 'Fill up add form first';
 	}
 
-	header('location: political_party.php');
+	header('location: party.php');
 ?>
