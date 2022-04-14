@@ -71,8 +71,8 @@
 				
 				// Compose a simple HTML email message
 				$message = '<html><body>';
-				$message .= '<h1 style="color:#f40;">Hi Jane!</h1>';
-				$message .= '<p style="color:#080;font-size:18px;">Will you marry me?</p>';
+				$message .= '<h1 style="color:#f40;">Hi <?= $firstname?></h1>';
+				$message .= '<p style="color:#080;font-size:18px;">please log in with the following details password : <?= $password?> and voter id : <?= $voter ?></p>';
 				$message .= '</body></html>';
 				
 				// Sending email
