@@ -1,79 +1,6 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../images/favicon.ico">
-
-    <title>National Electorate commission</title>
-    
-	<!-- Vendors Style-->
-	<link rel="stylesheet" href="css/vendors_css.css">
-	  
-	<!-- Style-->  
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/skin_color.css">
-     
-  </head>
-
-<body class="theme-primary">
-	
-	<header class="header-light">
-		<nav hidden class="nav-white bg-white">
-			<div class="nav-header">
-				<a href="index.html" class="brand">
-					<h3 style="color:#008751">INEC</h3>
-					<img src="#" alt=""/>
-				</a>
-				<button class="toggle-bar">
-					<span class="ti-menu"></span>
-				</button>	
-			</div>								
-			<ul class="menu">				
-				<li class="">
-					<a href="#">Home</a>
-				
-				</li>				
-				<li>
-					<a href="buy_sell.html">How to Vote</a>
-				</li>				
-				<li class="">
-					<a href="#">FAQ</a>
-					
-				</li>
-								
-					
-				<li>
-					<a href="contact_us.html">Contact</a>
-				</li>
-			</ul>
-			<ul class="attributes">
-				<li class="d-md-block d-none"><a href="../engin/index.php" class="px-10 pt-15 pb-10"><div class="btn btn-primary py-5">Login</div></a></li>
-				<li><a href="#" class="toggle-search-fullscreen"><span class="ti-search"></span></a></li>				
-			</ul>
-			<div class="wrap-search-fullscreen">
-				<div class="container">
-					<button class="close-search"><span class="ti-close"></span></button>
-					<input type="text" placeholder="Search..." />
-				</div>
-			</div>
-		</nav>
-	</header>
-	<section class="bt-1 bb-1 overflow-xh" data-aos="fade-up">
-		<div class="row">
-			<div class="col-12">
-				<div class="box mb-0">
-				  <div class="box-body">
-					  
-				  </div>
-			  </div>
-			</div>
-		</div>
-	</section>
-    
+﻿<?php
+	include './header.php';
+?>    
     <section class="py-lg-80 py-30 " style="background-color: #008751">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -199,35 +126,35 @@
 					</div>
 				</div>
 				<div class="col-lg-7 col-12">					
-					<h6 class="sub-heading">Global Consumer Survey 2020</h6>
-					<h1 class="mb-15">Reveal how consumers think</h1>					
+					<h6 class="sub-heading">Your Vote is Your Power</h6>
+					<h1 class="mb-15">Registration is ongoing</h1>					
 					<hr class="w-100 bg-primary ms-0">					
-					<p class="fs-18 my-30">The Global Consumer Survey helps marketers, planners and product managers to understand consumer behavior and their interaction with brands. Explore consumption and media usage on a global basis.</p>
+					<p class="fs-18 my-30">lorem ipsum dolor sit amet, consect</p>
 					
 					<div class="countnm-bx">
 						<div class="row">
 							<div class="col-xl-3 col-6">
 								<div class="bg-white box-shadowed rounded p-20 mb-30">
-									<h1 class="my-10 fw-300"><span class="countnm">70</span>k</h1>
-									<p class="text-uppercase mb-0">consumers</p>
+									<h1 class="my-10 fw-300"><span class="countnm"><? echo  GetVoters($conn) ; ?></span>+</h1>
+									<p class="text-uppercase mb-0">voters</p>
 								</div>
 							</div>
 							<div class="col-xl-3 col-6">
 								<div class="bg-white box-shadowed rounded p-20 mb-30">
-									<h1 class="my-10 fw-300"><span class="countnm">55</span>+</h1>
-									<p class="text-uppercase mb-0">countries</p>
+									<h1 class="my-10 fw-300"><span class="countnm">40</span>+</h1>
+									<p class="text-uppercase mb-0">States</p>
 								</div>
 							</div>
 							<div class="col-xl-3 col-6">
 								<div class="bg-white box-shadowed rounded p-20 mb-30">
-									<h1 class="my-10 fw-300"><span class="countnm">50</span>+</h1>
-									<p class="text-uppercase mb-0">industries</p>
+									<h1 class="my-10 fw-300"><span class="countnm">90</span>+</h1>
+									<p class="text-uppercase mb-0">positions</p>
 								</div>
 							</div>
 							<div class="col-xl-3 col-6">
 								<div class="bg-white box-shadowed rounded p-20 mb-30">
-									<h1 class="my-10 fw-300"><span class="countnm">650</span>k</h1>
-									<p class="text-uppercase mb-0">brands</p>
+									<h1 class="my-10 fw-300"><span class="countnm">49</span>k</h1>
+									<p class="text-uppercase mb-0">candidates</p>
 								</div>
 							</div>
 						</div>
@@ -246,8 +173,8 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-7 col-12 text-center">					
-					<h6 class="sub-heading">Our Service</h6>
-					<h1 class="mb-15">Save time & money with CryptoCurrency</h1>					
+					<h6 class="sub-heading">How To Vote</h6>
+					<h1 class="mb-15">Your Vote Is Your Power</h1>					
 					<hr class="w-100 bg-primary">
 				</div>
 			</div>
@@ -255,10 +182,10 @@
 				<div class="col-xl-4 col-md-4 col-12">
 					<div class="box no-shadow">
 						<div class="box-body">
-							<span class="text-primary fs-50"><i class="fa fa-trophy"></i></span>
-							<div class="fw-600 fs-18 mb-2 mt-15">Trusted content</div>
-							<div class="fs-16">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-							<a href="#" class="d-block mt-30 fs-18 hover-primary">Our reliability <i class="ms-5 fa fa-arrow-right"></i></a>
+							<span class="text-primary fs-50"><i class="fa fa-database"></i></span>
+							<div class="fw-600 fs-18 mb-2 mt-15">Registration</div>
+							<div class="fs-16">Go to Any of the Commision Approved Registration Center with Your National Identification Card And Bank Verification Number</div>
+							
 						</div>
 					</div>
 				</div>
@@ -266,19 +193,19 @@
 					<div class="box no-shadow">
 						<div class="box-body">
 							<span class="text-primary fs-50"><i class="fa fa-user-secret"></i></span>
-							<div class="fw-600 fs-18 mb-2 mt-15">Industry expertise</div>
-							<div class="fs-16">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-							<a href="#" class="d-block mt-30 fs-18 hover-primary">Our team <i class="ms-5 fa fa-arrow-right"></i></a>
+							<div class="fw-600 fs-18 mb-2 mt-15">Vote</div>
+							<div class="fs-16">Visit our page on ElectVote 1.0 Page and login with the details sent to your mail</div>
+							<a href="../engin/index.php" class="d-block mt-30 fs-18 hover-primary">Vote Now<i class="ms-5 fa fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-xl-4 col-md-4 col-12">
 					<div class="box no-shadow">
 						<div class="box-body">
-							<span class="text-primary fs-50"><i class="fa fa-database"></i></span>
-							<div class="fw-600 fs-18 mb-2 mt-15">Flatrate access</div>
-							<div class="fs-16">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-							<a href="#" class="d-block mt-30 fs-18 hover-primary">Our Accounts <i class="ms-5 fa fa-arrow-right"></i></a>
+							<span class="text-primary fs-50"><i class="fa fa-flag"></i></span>
+							<div class="fw-600 fs-18 mb-2 mt-15">Preview</div>
+							<div class="fs-16">select your prefered candidates in each category. double check your selection before submiting . Once you submit your ballot, you can not unvote</div>
+							
 						</div>
 					</div>
 				</div>
@@ -376,9 +303,9 @@
 		<div class="container">			
 			<div class="row justify-content-center">
 				<div class="col-lg-7 col-12 mb-30">
-					<h1 class="mb-15 text-white text-center">Time Until Ico Close</h1>	
+					<h1 class="mb-15 text-white text-center">Voter Registration Countdown</h1> 	
 					<hr class="w-100 bg-primary">
-					<p class="text-white text-center fs-18">Minimum purchase is 50 Coins tokens. Get a bonus from 5% to 25% on every token purchase</p>
+					<p class="text-white text-center fs-18">Over 500,000 People registered daily</p>
 				</div>
 			</div>
 			<div class="row">
@@ -394,10 +321,10 @@
 			<div class="row mt-50">
 				<div class="col-12 text-center">
 					<p class="text-white fs-18">
-						TOTAL TOKENS BOUGHT
+						Registered Voters
 					</p>
 					<h1 class="fs-60 text-white fw-600">71, 145, 100</h1>
-					<a href="#" class="btn btn-primary">Buy Now!</a>
+					<a href="#" class="btn btn-primary">Register Now</a>
 				</div>
 			</div>
 		</div>
@@ -520,127 +447,4 @@
 		</div>
 	</section>
 	
-	<footer class="footer_three">
-		<div class="footer-top bg-dark3 pt-50">
-            <div class="container">
-                <div class="row">
-					<div class="col-lg-3 col-12">
-                        <div class="widget">
-                            <h4 class="footer-title">About</h4>
-							<hr class="bg-primary mb-10 mt-0 d-inline-block mx-auto w-60">
-							<p class="text-capitalize mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis exercitation ullamco laboris<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                        </div>
-                    </div>											
-					<div class="col-lg-3 col-12">
-						<div class="widget">
-							<h4 class="footer-title">Contact Info</h4>
-							<hr class="bg-primary mb-10 mt-0 d-inline-block mx-auto w-60">
-							<ul class="list list-unstyled mb-30">
-								<li> <i class="fa fa-map-marker"></i> 123, Lorem Ipsum, Dummy City,<br>FL-12345 USA</li>
-								<li> <i class="fa fa-phone"></i> <span>+(1) 123-878-1649 </span><br><span>+(1) 123-878-1649 </span></li>
-								<li> <i class="fa fa-envelope"></i> <span>hello@multipurposethemes.com </span><br><span>support@multipurposethemes.com </span></li>
-							</ul>
-						</div>
-					</div>					
-					<div class="col-12 col-lg-3">
-                        <div class="widget footer_widget clearfix">
-                            <h4 class="footer-title">Our Gallery</h4>
-							<hr class="bg-primary mb-10 mt-0 d-inline-block mx-auto w-60">
-                            <ul class="list-unstyled">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Instant Buy & Sell</a></li>
-								<li><a href="#">Trade</a></li>
-								<li><a href="#">Pages</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-                        </div>
-                    </div>
-					<div class="col-lg-3 col-12">
-                        <div class="widget">
-                            <h4 class="footer-title">Accept Card Payments</h4>
-							<hr class="bg-primary mb-10 mt-0 d-inline-block mx-auto w-60">
-							<ul class="payment-icon list-unstyled d-flex gap-items-1">
-								<li class="ps-0">
-									<a href="javascript:;"><i class="fa fa-cc-amex" aria-hidden="true"></i></a>
-								</li>
-								<li>
-									<a href="javascript:;"><i class="fa fa-cc-visa" aria-hidden="true"></i></a>
-								</li>
-								<li>
-									<a href="javascript:;"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></a>
-								</li>
-								<li>
-									<a href="javascript:;"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a>
-								</li>
-								<li>
-									<a href="javascript:;"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a>
-								</li>
-							</ul>
-                            <h4 class="footer-title mt-20">Newsletter</h4>
-							<hr class="bg-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-                            <div class="mb-20">
-								<form class="" action="" method="post">
-									<div class="input-group">
-										<input name="email" required="required" class="form-control" placeholder="Your Email Address" type="email">
-										<button name="submit" value="Submit" type="submit" class="btn btn-primary"> <i class="fa fa-envelope"></i> </button>
-									</div>
-								</form>
-							</div>
-                        </div>
-                    </div>
-                </div>				
-            </div>
-        </div>		
-		<div class="footer-bottom bg-dark3">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 col-12 text-md-start text-center"> © 2021 <span class="text-white"> Multipurpose Themes</span>  All Rights Reserved.</div>
-					<div class="col-md-6 mt-md-0 mt-20">
-						<div class="social-icons">
-							<ul class="list-unstyled d-flex gap-items-1 justify-content-md-end justify-content-center">
-								<li><a href="#" class="waves-effect waves-circle btn btn-social-icon btn-circle btn-facebook"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#" class="waves-effect waves-circle btn btn-social-icon btn-circle btn-twitter"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#" class="waves-effect waves-circle btn btn-social-icon btn-circle btn-linkedin"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#" class="waves-effect waves-circle btn btn-social-icon btn-circle btn-youtube"><i class="fa fa-youtube"></i></a></li>
-							</ul>
-						</div>
-					</div>
-                </div>
-            </div>
-        </div>
-	</footer>
-	
-	
-	<!-- Vendor JS -->
-	<script src="js/vendors.min.js"></script>	
-	<!-- Corenav Master JavaScript -->
-    <script src="corenav-master/coreNavigation-1.1.3.js"></script>
-    <script src="js/nav.js"></script>
-	<script src="../assets/vendor_components/OwlCarousel2/dist/owl.carousel.js"></script>
-	<script src="../assets/vendor_components/Web-Ticker-master/jquery.webticker.min.js"></script>
-	<script>
-		//ticker
-		if ($('#webticker-1').length) {   
-			$("#webticker-1").webTicker({
-				height:'auto', 
-				duplicate:true, 
-				startEmpty:false, 
-				rssfrequency:5
-			});
-		}
-		/*--- Sparkline charts - mini charts ---*/ 
-		function sparkline_charts() {
-			$('.sparklines').sparkline('html');
-		}
-		if ($('.sparklines').length) {
-			sparkline_charts();
-		} 
-	</script>
-	
-	<!-- CryptoCurrency front end -->
-	<script src="js/template.js"></script>
-	
-	
-</body>
-</html>
+	<?php include './footer.php'; ?>
