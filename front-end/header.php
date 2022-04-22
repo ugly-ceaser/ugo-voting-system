@@ -1,18 +1,10 @@
 
-<?php 
-
-include '../engin/includes/conn.php';
-
-function GetVoters($conn){
-    $sql = "SELECT * FROM voters";
-    $result = $conn->prepare($sql);
-    $result->execute();
-
-
-    return $result->fetchAll();
-
-}
-?>
+	<?php 
+	include '../engin/includes/conn.php';
+	include '../engin/includes/functions.php';
+	
+	
+	?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +46,7 @@ function GetVoters($conn){
 				
 				</li>				
 				<li>
-					<a href="buy_sell.php">How to Vote</a>
+					<a href="#howToVote">How to Vote</a>
 				</li>				
 				<li class="">
 					<a href="#">FAQ</a>
@@ -89,3 +81,4 @@ function GetVoters($conn){
 			</div>
 		</div>
 	</section>
+

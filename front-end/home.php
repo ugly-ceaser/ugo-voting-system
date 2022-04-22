@@ -1,4 +1,5 @@
 ﻿<?php
+
 	include './header.php';
 ?>    
     <section class="py-lg-80 py-30 " style="background-color: #008751">
@@ -24,8 +25,8 @@
 							<li><a href="#" class="btn btn-dark btn-sm mb-20">Candidates</a></li>
 							<li><a href="#" class="btn btn-dark btn-sm mb-20">Campaigns</a></li>
 							<li><a href="#" class="btn btn-dark btn-sm mb-20">Manifestoes</a></li>
-							<li><a href="#" class="btn btn-dark btn-sm mb-20">how to vote</a></li>
-							<li><a href="#" class="btn btn-dark btn-sm mb-20">How to register</a></li>
+							<li><a href="#howToVote" class="btn btn-dark btn-sm mb-20">how to vote</a></li>
+							<li><a href="#hoeToRegister" class="btn btn-dark btn-sm mb-20">How to register</a></li>
 							
 						</ul>
 					</div>
@@ -52,64 +53,7 @@
 		</div>
 	</section>
 	
-	<section class="py-lg-100 py-50 overflow-xh" data-aos="fade-up">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-7 col-12 text-start">
-					<h6 class="sub-heading">Market Outlooks</h6>
-					<h1 class="mb-15">Analyze markets across 150+ countries</h1>					
-					<hr class="w-100 bg-primary ms-0">
-					
-					<ul class="nav nav-pills" role="tablist">
-						<li class="nav-item"> <a class="nav-link active fs-18 py-15" data-bs-toggle="tab" href="#home7" role="tab">Consumer Markets</a> </li>
-						<li class="nav-item"> <a class="nav-link py-15 fs-18" data-bs-toggle="tab" href="#profile7" role="tab">Digital Markets</a> </li>
-						<li class="nav-item"> <a class="nav-link py-15 fs-18" data-bs-toggle="tab" href="#messages7" role="tab">Mobility Markets</a> </li>
-					</ul>
-					<!-- Tab panes -->
-					<div class="tab-content">
-						<div class="tab-pane active" id="home7" role="tabpanel">
-							<div class="py-15">
-								<p class="fs-18 mb-20">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>								
-								<div class="text-center d-flex gap-3 justify-content-start">
-									<a href="#" class="btn btn-primary">Explore the tool</a>
-									<a href="#" class="btn btn-outline btn-primary"> <i class="fa fa-youtube-play me-10"></i>Watch the tutorial</a>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane" id="profile7" role="tabpanel">
-							<div class="py-15">
-								<p class="fs-18 mb-20">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
-								<div class="text-center d-flex gap-3 justify-content-start">
-									<a href="#" class="btn btn-primary">Explore the tool</a>
-									<a href="#" class="btn btn-outline btn-primary"> <i class="fa fa-youtube-play me-10"></i>Watch the tutorial</a>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane" id="messages7" role="tabpanel">
-							<div class="py-15">
-								<p class="fs-18 mb-20">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites</p>							
-								<div class="text-center d-flex gap-3 justify-content-start">
-									<a href="#" class="btn btn-primary">Explore the tool</a>
-									<a href="#" class="btn btn-outline btn-primary"> <i class="fa fa-youtube-play me-10"></i>Watch the tutorial</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-5 col-12 d-lg-block d-none">
-					<div class="browserMockup browserMockup--perspectiveRight ms-70 position-relative">
-						<div class="browserMockup__addressBar">
-							<span class="browserMockup__button"></span>
-							<span class="browserMockup__button"></span>
-							<span class="browserMockup__button"></span>
-							<span class="browserMockup__addressInput"></span>
-						</div>
-						<span class="homeScreenshot  homeScreenshot--mmo" style="background-position-y: 0px;"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	
 	
 	<section class="bt-1 py-lg-100 py-50 overflow-xh" data-aos="fade-up">
 		<div class="container">		
@@ -135,41 +79,41 @@
 						<div class="row">
 							<div class="col-xl-3 col-6">
 								<div class="bg-white box-shadowed rounded p-20 mb-30">
-									<h1 class="my-10 fw-300"><span class="countnm"><? echo  GetVoters($conn) ; ?></span>+</h1>
+									<h1 class="my-10 fw-300"><span class="countnm"><?= getVoters($conn) ?></span></h1>
 									<p class="text-uppercase mb-0">voters</p>
 								</div>
 							</div>
 							<div class="col-xl-3 col-6">
 								<div class="bg-white box-shadowed rounded p-20 mb-30">
-									<h1 class="my-10 fw-300"><span class="countnm">40</span>+</h1>
-									<p class="text-uppercase mb-0">States</p>
+									<h1 class="my-10 fw-300"><span class="countnm"><?= getCandidates($conn) ?></span></h1>
+									<p class="text-uppercase mb-0">Candidates</p>
 								</div>
 							</div>
 							<div class="col-xl-3 col-6">
 								<div class="bg-white box-shadowed rounded p-20 mb-30">
-									<h1 class="my-10 fw-300"><span class="countnm">90</span>+</h1>
+									<h1 class="my-10 fw-300"><span class="countnm"><?= getPositions($conn) ?></span></h1>
 									<p class="text-uppercase mb-0">positions</p>
 								</div>
 							</div>
 							<div class="col-xl-3 col-6">
 								<div class="bg-white box-shadowed rounded p-20 mb-30">
-									<h1 class="my-10 fw-300"><span class="countnm">49</span>k</h1>
-									<p class="text-uppercase mb-0">candidates</p>
+									<h1 class="my-10 fw-300"><span class="countnm"><?= getVotes($conn) ?></span></h1>
+									<p class="text-uppercase mb-0"> Total Votes</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					
 					<div class="text-center d-flex gap-3 justify-content-start">
-						<a href="#" class="btn btn-primary">Explore the tool</a>
-						<a href="#" class="btn btn-outline btn-primary"> <i class="fa fa-youtube-play me-10"></i>Watch the tutorial</a>
+						<a href="#" class="btn btn-primary">Explore the Site</a>
+						<a href="#" class="btn btn-outline btn-primary"> <i class="fa fa-youtube-play me-10"></i>Watch Now</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	
-	<section class="py-50 bg-white" data-aos="fade-up">
+	<section id="howToVote" class="py-50 bg-white" data-aos="fade-up">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-7 col-12 text-center">					
@@ -242,7 +186,7 @@
 											<li><i class="fa fa-star"></i></li>
 											<li><i class="fa fa-star"></i></li>
 										</ul>
-										<p class="fs-16">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word...</p>
+										<p class="fs-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dolore aliquam autem quibusdam necessitatibus ipsam accusamus doloremque fugiat, ratione deserunt a, sapiente similique culpa odit. Libero iure non laboriosam ipsa?.</p>
 									</div>
 								</div>
 							</div>
@@ -265,7 +209,7 @@
 											<li><i class="fa fa-star"></i></li>
 											<li><i class="fa fa-star"></i></li>
 										</ul>
-										<p class="fs-16">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word...</p>
+										<p class="fs-16"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dolore aliquam autem quibusdam necessitatibus ipsam accusamus doloremque fugiat, ratione deserunt a, sapiente similique culpa odit. Libero iure non laboriosam ipsa?. </p>
 									</div>
 								</div>
 							</div>
@@ -288,7 +232,7 @@
 											<li><i class="fa fa-star"></i></li>
 											<li><i class="fa fa-star"></i></li>
 										</ul>
-										<p class="fs-16">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word...</p>
+										<p class="fs-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dolore aliquam autem quibusdam necessitatibus ipsam accusamus doloremque fugiat, ratione deserunt a, sapiente similique culpa odit. Libero iure non laboriosam ipsa?.</p>
 									</div>
 								</div>
 							</div>

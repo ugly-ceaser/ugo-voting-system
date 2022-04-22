@@ -1,5 +1,5 @@
 <?php 
-Header("location:./front-end/index.php");
+Header("location:./front-end/home.php");
 
 
 
